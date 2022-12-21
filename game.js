@@ -6,11 +6,10 @@ console.log(options);
 // Game function
 options.forEach((option) => {
   option.addEventListener("click", function () {
-    const pInput = this.textContent;
-
+    const pInput = this.textContent;// Player input
         const cOptions = ["Rock", "Paper", "Scissors"];
         const cInput = cOptions[Math.floor(Math.random() * 3)];
-
+        // Comper player vs computer inputs
         compareInputs(pInput, cInput);
   });
 });
