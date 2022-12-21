@@ -33,15 +33,19 @@
 }
 .uvscpu {
   text-align: center;
+  font-size: 18px;
 }
+.clickers {
+  text-align: center;
+  padding: 20px;
+}
+button {
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #8FC93A;
+  border: 5px solid #0072BB;
+  border-radius: 20px;
+  padding: 8px;
+  font-family: 'Press Start 2P';
 
-span {
-  font-size: 25px;
-}
-
-#user {
-  font-size: 50px;
-}
-#cpu {
-  font-size: 50px;
 }
