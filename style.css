@@ -31,3 +31,17 @@
   padding-top: 25px;
   text-align: center;
 }
+.uvscpu {
+  text-align: center;
+}
+
+span {
+  font-size: 25px;
+}
+
+#user {
+  font-size: 50px;
+}
+#cpu {
+  font-size: 50px;
+}

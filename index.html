@@ -20,19 +20,25 @@
       <h1>Little Rock    <i class="fas fa-skull-crossbones"></i></h1>
     </header>
     <div class="intro">
-      <p>Little Rock Paper Scissors game</p>
+      <h2>Little Rock Paper Scissors game</h2>
+      <p>Win ten rounds to be the victor</p>
     </div>
     
+    
+    <div class="uvscpu">
+      <i class="far fa-user" id="user"></i>
+      <span id="pScore">0</span>
+      <span id="cScore">0</span>
+      <i class="fas fa-laptop-code" id="cpu"></i>
+    </div>
+
     <div>
       <button class="options">Rock</button>
       <button class="options">Paper</button>
       <button class="options">Scissors</button>
     </div>
-    
-
     <div class="message"></div>
-    <span id="pScore">0</span>
-    <span id="cScore">0</span>
+    
     <div class="wns"></div>
     <p><input type="button" value="Restart the game" onClick="restart(this)"></p>
     <script src="game.js"></script>
