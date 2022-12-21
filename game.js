@@ -3,11 +3,9 @@ const options = document.querySelectorAll(".options");
 const message = document.querySelector('.message');
 const wns = document.querySelector('.wns');
 console.log(options);
-
 // Score count
 let pScore = 0;
 let cScore = 0;
-
 // Game function
 options.forEach((option) => {
   option.addEventListener("click", function () {
@@ -25,13 +23,11 @@ options.forEach((option) => {
         }
   });
 });
-
 // Update score 
 function updateScore() {
   document.getElementById('pScore').textContent = pScore;
   document.getElementById('cScore').textContent = cScore;
 }
-
 // Winner check, first one reach 10 wins
 function checkWinner() {
   if (pScore === 10 || cScore === 10) {
@@ -44,7 +40,6 @@ function checkWinner() {
   }
   return false;
 }
-
 // Comparing inputs
 function compareInputs(pInput, cInput) {
   const currentMatch = `${pInput} vs ${cInput}`;
@@ -54,7 +49,6 @@ function compareInputs(pInput, cInput) {
     message.innerHTML = (`TIE !`);
     return;
   }
-
   // Rock
   if (pInput === "Rock") {
     if (cInput === "Scissors") {
