@@ -87,3 +87,7 @@ function compareInputs(pInput, cInput) {
     }
   }
 }
+// Restart the game
+function restart() {
+  window.location.reload("restart");
+}
