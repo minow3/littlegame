@@ -28,7 +28,7 @@
   font-size: 40px;
 }
 .intro {
-  padding-top: 25px;
+  padding-top: 20px;
   text-align: center;
 }
 .uvscpu {
@@ -41,15 +41,16 @@
 }
 button {
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 12px;
   background-color: #8FC93A;
   border: 5px solid #0072BB;
   border-radius: 20px;
-  padding: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-family: 'Press Start 2P';
   cursor: pointer;
-    outline: 0;
-    transition: 0.3s linear;
+  outline: 0;
+  transition: 0.3s linear;
 
 }
 button:active {
@@ -59,5 +60,5 @@ button:active {
 
 .message {
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
 }
