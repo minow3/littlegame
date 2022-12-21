@@ -51,27 +51,27 @@ function compareInputs(pInput, cInput) {
 
   // Tie check
   if (pInput === cInput) {
-    message.innerHTML = (`${currentMatch} is a Tie`);
+    message.innerHTML = (`TIE !`);
     return;
   }
 
   // Rock
   if (pInput === "Rock") {
     if (cInput === "Scissors") {
-      message.innerHTML = (`${currentMatch} = You Win`);
+      message.innerHTML = (`You Won !`);
       pScore++;
     } else {
-      message.innerHTML = (`${currentMatch} = Computer Wins`);
+      message.innerHTML = (`Computer Won !`);
       cScore++;
     }
   }
   // Paper
   else if (pInput === "Paper") {
     if (cInput === "Rock") {
-      message.innerHTML = (`${currentMatch} = You Win`);
+      message.innerHTML = (`You Won !`);
       pScore++;
     } else {
-      message.innerHTML = (`${currentMatch} = Computer Wins`);
+      message.innerHTML = (`Computer Won !`);
       cScore++;
       
     }
@@ -79,10 +79,10 @@ function compareInputs(pInput, cInput) {
   // Scissors
   else {
     if (cInput === "Paper") {
-      message.innerHTML = (`${currentMatch} = You Win`);
+      message.innerHTML = (`You Won !`);
       pScore++;
     } else {
-      message.innerHTML = (`${currentMatch} = Computer Wins`);
+      message.innerHTML = (`Computer Won !`);
       cScore++;
     }
   }

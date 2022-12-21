@@ -49,3 +49,8 @@ button {
   font-family: 'Press Start 2P';
 
 }
+
+.message {
+  text-align: center;
+  font-size: 30px;
+}
