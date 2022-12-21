@@ -1,6 +1,7 @@
 // Selectors
 const options = document.querySelectorAll(".options");
 const message = document.querySelector('.message');
+const wns = document.querySelector('.wns');
 console.log(options);
 
 // Score count
@@ -17,12 +18,31 @@ options.forEach((option) => {
         compareInputs(pInput, cInput);
         // Update scores
         updateScore();
+        // Winner check
+        if (checkWinner()) {
+          pScore = cScore = 0;
+          updateScore();
+        }
   });
 });
+
 // Update score 
 function updateScore() {
   document.getElementById('pScore').textContent = pScore;
   document.getElementById('cScore').textContent = cScore;
+}
+
+// Winner check, first one reach 10 wins
+function checkWinner() {
+  if (pScore === 10 || cScore === 10) {
+    if (pScore === 10) {
+      wns.innerHTML = `you win the game`;
+    }else{
+      wns.innerHTML = `Computer wins`;
+    }
+      return true;
+  }
+  return false;
 }
 
 // Comparing inputs
