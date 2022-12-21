@@ -4,38 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Little Rock</title>
   <meta name="description" content="Simple Rock Paper Scissors game, it gives a pleasant feeling to play with computer and take your chances.">
   <meta name="keywords" content="luck, fun, time, enjoy, incremental, clicker, gambling, play">
   <meta name="author" content="Tomas Bendaravicius">
+  <!--page title, css, javascript-->
+  <title>Little Rock</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/894a97f609.js" crossorigin="anonymous"></script>
 </head>
+<!--main page, background-->
 <body id="background">
+<!--center style website-->
   <div id="center">
+<!--page logo-->
     <header class="header">
       <h1>Little Rock</h1>
     </header>
+<!--game name end rules-->
     <div class="intro">
       <h2>Little Rock Paper Scissors game</h2>
       <p>10 rounds to win the game</p>
     </div>
-    <div class="wns"></div>
+<!--DOM messages-->
+    <div class="wns">Lets try to win</div>
+    <div class="message">Press on the selections</div>
+<!--click buttons-->
     <div class="clickers">
       <button class="options">Rock</button>
       <button class="options">Paper</button>
       <button class="options">Scissors</button>
     </div>
-    <div class="message"></div>
-    
+<!--scores-->
     <div class="uvscpu">
       <p>SCORES</p>
       <div>PLAYER - <span id="pScore">0</span> : COMPUTER - <span id="cScore">0</span></div>
     </div>
-    
+<!--Resset button-->
     <p id="pcenter"><input id="restart" type="button" value="Restart the game" onClick="restart(this)"></p>
     <script src="game.js"></script>
   </div>
