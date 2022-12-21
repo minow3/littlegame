@@ -43,11 +43,11 @@
 }
 .clickers {
   text-align: center;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 button {
   margin: 0 auto;
-  font-size: 12px;
+  font-size: 15px;
   background-color: #E18335;
   border: 5px solid #0072BB;
   border-radius: 20px;
@@ -66,10 +66,21 @@ button:active {
 
 .message {
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
 .wns {
   font-size: 35px;
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#restart {
+  background-color: #E18335;
+  border: 5px solid #0072BB;
+  border-radius: 20px;
+  font-family: 'Press Start 2P';
+  padding-top: 8px;
+  padding-bottom: 8px;
 }

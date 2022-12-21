@@ -36,9 +36,9 @@ function updateScore() {
 function checkWinner() {
   if (pScore === 10 || cScore === 10) {
     if (pScore === 10) {
-      wns.innerHTML = `you win the game`;
+      wns.innerHTML = `Winner !`;
     }else{
-      wns.innerHTML = `Computer wins`;
+      wns.innerHTML = `Computer won !`;
     }
       return true;
   }
@@ -58,20 +58,20 @@ function compareInputs(pInput, cInput) {
   // Rock
   if (pInput === "Rock") {
     if (cInput === "Scissors") {
-      message.innerHTML = (`You Won !`);
+      message.innerHTML = (`Score 1 Player`);
       pScore++;
     } else {
-      message.innerHTML = (`Computer Won !`);
+      message.innerHTML = (`Score 1 Computer`);
       cScore++;
     }
   }
   // Paper
   else if (pInput === "Paper") {
     if (cInput === "Rock") {
-      message.innerHTML = (`You Won !`);
+      message.innerHTML = (`Score 1 Player`);
       pScore++;
     } else {
-      message.innerHTML = (`Computer Won !`);
+      message.innerHTML = (`Score 1 Computer`);
       cScore++;
       
     }
@@ -79,10 +79,10 @@ function compareInputs(pInput, cInput) {
   // Scissors
   else {
     if (cInput === "Paper") {
-      message.innerHTML = (`You Won !`);
+      message.innerHTML = (`Score 1 Player`);
       pScore++;
     } else {
-      message.innerHTML = (`Computer Won !`);
+      message.innerHTML = (`Score 1 Computer`);
       cScore++;
     }
   }
