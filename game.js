@@ -28,10 +28,10 @@ function updateScore() {
   document.getElementById('pScore').textContent = pScore;
   document.getElementById('cScore').textContent = cScore;
 }
-// Winner check, first one reach 10 wins
+// Winner check, first one reach 3 wins
 function checkWinner() {
-  if (pScore === 10 || cScore === 10) {
-    if (pScore === 10) {
+  if (pScore === 3 || cScore === 3) {
+    if (pScore === 3) {
       wns.innerHTML = `Winner !`;
     }else{
       wns.innerHTML = `Computer won !`;
