@@ -11,5 +11,19 @@
   border: 10px solid #0072BB;
   border-radius: 50px;
   background-color: #E4CC37;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P';
+}
+
+.header {
+  text-align: center;
+  border: 10px solid #0072BB;
+  border-radius: 50px;
+  width: 100%;
+  margin-left: -10px;
+  margin-top: -10px;
+  background-color: #E18335;
+}
+
+.header i {
+  font-size: 50px;
 }
