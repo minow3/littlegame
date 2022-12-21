@@ -1,0 +1,11 @@
+#background {
+  background-color: #5EB3E8;
+}
+
+#center {
+  max-width: 960px;
+  margin: 0 auto;
+  border: 10px solid #0072BB;
+  border-radius: 50px;
+  background-color: #E4CC37;
+}
